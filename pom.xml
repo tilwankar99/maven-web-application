@@ -110,7 +110,7 @@
 	
 	<repositories>
 		<repository>
-		     <id>nexus<id>
+		     <id>nexus</id>
 		     <name>proxy-repo-mss</name>
 	              <url>http://3.87.214.78:8081/repository/wallmart-proxy/</url>
 		</repository>
