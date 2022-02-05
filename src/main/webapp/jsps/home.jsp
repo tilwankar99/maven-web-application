@@ -4,34 +4,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>MithunTechnologies- Home Page</title>
-<link href="images/mithunlogo.jpg" rel="icon">
+<title>End to End CI/CD project</title>
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to MSS. - GitHub Webhook Demo... </h1>
-<h1 align="center">Triggered by Github Webhook</h1>
+<h1 align="center">Welcome to My CI/CD project</h1>
+<h1 align="center">Triggered by webhook when there is a change in code and jenkins pull the  build it , executes sonarqube report , upload artifact to nexus , create docker image , push docker image to ECR private regstry and deploy it on K8s cluster with deployment and strategy as rolling update </h1>
 <hr>
 <div style="text-align: center;">
-	<span>
-		<img src="images/mithunlogo.jpg" alt="" width="100">
-	</span>
+	
 	<span style="font-weight: bold;">
-		Mithun Software Solutions, 
-		Martha Halli,
-		Bangalore,
-		+91-9980923226,
-		devopstrainingbr@gmail.com
-		<br>
-		<a href="mailto:devopstrainingblr@gmail.com">Mail to Mithun Technologies</a>
+		Project Successfully Deployed
 	</span>
 </div>
 <hr>
-	<p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details </p>
-<hr>
-<hr>
-<p align=center>Mithun Technologies - Consultant, Training, Development Center.</p>
-<p align=center><small>Copyrights 2021 by <a href="http://mithuntechnologies.com/">Mithun Technologies</a> </small></p>
-
 </body>
 </html>
