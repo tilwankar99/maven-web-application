@@ -27,7 +27,7 @@ spec:
       - name: regcrd
       containers:
       - name: mavenwebapp-container
-        image: 930264708953.dkr.ecr.us-east-1.amazonaws.com/mavenwebapp:mavenwebapp-VERSION
+        image: 245218175547.dkr.ecr.ap-south-1.amazonaws.com/mavenwebapp:mavenwebapp-VERSION
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
