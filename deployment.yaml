@@ -2,9 +2,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mavenwebapp-dp
+  name: maven-app-dp
   labels:
-    app: mavenwebapp
+    app: maven-app
 spec:
   replicas: 4
   revisionHistoryLimit: 10
@@ -16,18 +16,18 @@ spec:
   minReadySeconds: 30
   selector:
     matchLabels:
-       app: mavenwebapp
+       app: maven-app
   template:
     metadata:
-      name: mavenwebapp-pod
+      name: maven-app-pod
       labels:
-        app: mavenwebapp
+        app: maven-app
     spec:
       imagePullSecrets:
       - name: regcrd
       containers:
-      - name: mavenwebapp-container
-        image: 245218175547.dkr.ecr.ap-south-1.amazonaws.com/mavenwebapp:mavenwebapp-VERSION
+      - name: maven-app-container
+        image: shraddhatilwankar/maven-app-b3643c2c0c:maven-app
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -44,11 +44,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mavenwebapp-svc
+  name: maven-app-svc
 spec:
   type: LoadBalancer
   selector:
-    app: mavenwebapp
+    app: maven-app
   ports:
   - port: 8080
     targetPort: 8080
