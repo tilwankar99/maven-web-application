@@ -27,7 +27,7 @@ spec:
       - name: regcrd
       containers:
       - name: maven-app-container
-        image: shraddhatilwankar/maven-app-b3643c2c0c:maven-app
+        image: shraddhatilwankar/maven-app-b3643c2c0c:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
